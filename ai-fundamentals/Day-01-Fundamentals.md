@@ -1,4 +1,4 @@
-# 📘 Day 01 — AI Fundamentals & System Overview  
+# 📘 Day 01: AI Fundamentals & System Overview  
 
 **Date:** March 30, 2026  
 **Track:** AWS AI Practitioner  
