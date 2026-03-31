@@ -96,7 +96,8 @@ aws-ai-security-engineering/
 ![SageMaker](https://img.shields.io/badge/SageMaker-%23FF9900.svg?style=for-the-badge)
 ![Cloud AI](https://img.shields.io/badge/Cloud%20AI-%23007ACC.svg?style=for-the-badge)
 
-**Development:**  
+**Development**  
+![Python](https://img.shields.io/badge/Python-%233776AB.svg?style=for-the-badge)
 ![JavaScript](https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?style=for-the-badge)
 ![React](https://img.shields.io/badge/React-%2300D8FF.svg?style=for-the-badge)
 ![Frontend](https://img.shields.io/badge/Frontend-%23007ACC.svg?style=for-the-badge)
