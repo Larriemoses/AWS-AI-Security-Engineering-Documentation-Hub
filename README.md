@@ -17,9 +17,46 @@ It serves as both:
 - 📘 A public learning log  
 - ✍🏽 A technical writing portfolio  
 
-This is not a collection of notes — it is a **system-level breakdown of intelligent systems and their security implications**.
+This is a **system-level breakdown of intelligent systems and their security implications**.
 
 ---
+## 🧠 Skill Set  
+
+### 🤖 AI & Machine Learning  
+![AI](https://img.shields.io/badge/Artificial%20Intelligence-%2300A67E.svg?style=for-the-badge)
+![ML](https://img.shields.io/badge/Machine%20Learning-%23007ACC.svg?style=for-the-badge)
+![Deep Learning](https://img.shields.io/badge/Deep%20Learning-%23FF6F00.svg?style=for-the-badge)
+![Generative AI](https://img.shields.io/badge/Generative%20AI-%23FF4088.svg?style=for-the-badge)
+
+---
+
+### 🔐 AI Security & Cybersecurity  
+![AI Security](https://img.shields.io/badge/AI%20Security-%23C62828.svg?style=for-the-badge)
+![Cybersecurity](https://img.shields.io/badge/Cybersecurity-%23000000.svg?style=for-the-badge)
+![SOC](https://img.shields.io/badge/SOC%20Analysis-%2300599C.svg?style=for-the-badge)
+![Threat Detection](https://img.shields.io/badge/Threat%20Detection-%23B71C1C.svg?style=for-the-badge)
+
+---
+
+### ☁️ Cloud & AWS  
+![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge)
+![SageMaker](https://img.shields.io/badge/SageMaker-%23FF9900.svg?style=for-the-badge)
+![Cloud AI](https://img.shields.io/badge/Cloud%20AI-%23007ACC.svg?style=for-the-badge)
+
+---
+
+### 💻 Development  
+![JavaScript](https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?style=for-the-badge)
+![React](https://img.shields.io/badge/React-%2300D8FF.svg?style=for-the-badge)
+![Frontend](https://img.shields.io/badge/Frontend%20Development-%23007ACC.svg?style=for-the-badge)
+
+---
+
+### ✍🏽 Technical Writing  
+![Technical Writing](https://img.shields.io/badge/Technical%20Writing-%234CAF50.svg?style=for-the-badge)
+![Documentation](https://img.shields.io/badge/Documentation-%23007ACC.svg?style=for-the-badge)
+![SEO](https://img.shields.io/badge/SEO%20Writing-%23FF5722.svg?style=for-the-badge)
+
 
 ## 🎯 Core Focus Areas  
 
@@ -76,40 +113,3 @@ aws-ai-security-engineering/
 │
 └── README.md
 
-
-## 🧠 Skill Set  
-
-### 🤖 AI & Machine Learning  
-![AI](https://img.shields.io/badge/Artificial%20Intelligence-%2300A67E.svg?style=for-the-badge)
-![ML](https://img.shields.io/badge/Machine%20Learning-%23007ACC.svg?style=for-the-badge)
-![Deep Learning](https://img.shields.io/badge/Deep%20Learning-%23FF6F00.svg?style=for-the-badge)
-![Generative AI](https://img.shields.io/badge/Generative%20AI-%23FF4088.svg?style=for-the-badge)
-
----
-
-### 🔐 AI Security & Cybersecurity  
-![AI Security](https://img.shields.io/badge/AI%20Security-%23C62828.svg?style=for-the-badge)
-![Cybersecurity](https://img.shields.io/badge/Cybersecurity-%23000000.svg?style=for-the-badge)
-![SOC](https://img.shields.io/badge/SOC%20Analysis-%2300599C.svg?style=for-the-badge)
-![Threat Detection](https://img.shields.io/badge/Threat%20Detection-%23B71C1C.svg?style=for-the-badge)
-
----
-
-### ☁️ Cloud & AWS  
-![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge)
-![SageMaker](https://img.shields.io/badge/SageMaker-%23FF9900.svg?style=for-the-badge)
-![Cloud AI](https://img.shields.io/badge/Cloud%20AI-%23007ACC.svg?style=for-the-badge)
-
----
-
-### 💻 Development  
-![JavaScript](https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?style=for-the-badge)
-![React](https://img.shields.io/badge/React-%2300D8FF.svg?style=for-the-badge)
-![Frontend](https://img.shields.io/badge/Frontend%20Development-%23007ACC.svg?style=for-the-badge)
-
----
-
-### ✍🏽 Technical Writing  
-![Technical Writing](https://img.shields.io/badge/Technical%20Writing-%234CAF50.svg?style=for-the-badge)
-![Documentation](https://img.shields.io/badge/Documentation-%23007ACC.svg?style=for-the-badge)
-![SEO](https://img.shields.io/badge/SEO%20Writing-%23FF5722.svg?style=for-the-badge)
