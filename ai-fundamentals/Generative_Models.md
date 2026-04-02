@@ -8,9 +8,9 @@
 
 ## 🧭 Overview  
 
-This session explored how modern AI systems generate content, how they are trained, and the different learning paradigms that power them.
+This session explores how modern AI systems generate content, how they are trained, and the learning paradigms that power them.
 
-The focus was on understanding **generative architectures**, **training processes**, and how models learn from both labeled and unlabeled data.
+The emphasis is on understanding **generative architectures**, **training workflows**, and how models learn from both structured and unstructured data.
 
 ---
 
@@ -18,11 +18,19 @@ The focus was on understanding **generative architectures**, **training processe
 
 ### 🔹 Embeddings & Vectors  
 
-Embeddings are numerical representations of data (e.g., words, images, tokens).
+Embeddings are numerical representations of data such as text, images, or tokens.
 
-- Each token is mapped to a vector (list of numbers)  
-- Captures semantic meaning and relationships  
-- Enables models to understand similarity between inputs  
+- Each token is mapped to a vector  
+- Captures semantic relationships  
+- Enables similarity understanding  
+
+### 📊 Representation Flow  
+
+```
+
+Word → Token → Vector (Embedding) → Model Understanding
+
+```
 
 ---
 
@@ -32,162 +40,213 @@ Embeddings are numerical representations of data (e.g., words, images, tokens).
 
 Diffusion models generate data by learning to reverse noise.
 
-**Process:**
-- Start with pure random noise  
-- Gradually add structure during training  
-- Learn to reverse noise → generate meaningful outputs  
+### ⚙️ Diffusion Process  
 
-**Output Examples:**
-- Images  
-- Text  
+```
+
+Noise → Noise + Structure → Refined Signal → Final Output (Image/Text)
+
+````
+
+### 🔁 Conceptual Flow (Mermaid)
+
+```mermaid
+graph LR
+A[Random Noise] --> B[Add Structure]
+B --> C[Refinement Process]
+C --> D[Generated Output]
+````
 
 ---
 
-### 🔹 Generative Adversarial Networks (GANs)  
+### 🔹 Generative Adversarial Networks (GANs)
 
 GANs consist of two competing neural networks:
 
-- **Generator:** Creates synthetic data from noise  
-- **Discriminator:** Evaluates whether data is real or fake  
+* **Generator:** Creates synthetic data
+* **Discriminator:** Distinguishes real vs fake
 
-**Key Idea:**  
-A competitive process improves both networks until realistic outputs are generated.
+### ⚙️ GAN Architecture
 
----
+```
+Noise → Generator → Fake Data → Discriminator → Real / Fake
+                    ↑______________________________|
+                          Feedback Loop
+```
 
-### 🔹 Variational Autoencoders (VAEs)  
+### 🔁 GAN Flow (Mermaid)
 
-VAEs are generative models that encode and reconstruct data.
-
-**Architecture:**
-- **Encoder:** Compresses input into a latent representation  
-- **Decoder:** Reconstructs data from latent space  
-
-**Purpose:**
-- Learn compact representations  
-- Generate similar data samples  
-
----
-
-## ⚙️ Model Training Processes  
-
-### 🔹 Pre-training  
-
-A supervised learning process where models are trained on large datasets to learn general patterns.
+```mermaid
+graph LR
+Z[Noise] --> G[Generator]
+G --> F[Fake Data]
+F --> D[Discriminator]
+D -->|Feedback| G
+D --> O[Decision]
+```
 
 ---
 
-### 🔹 Instruction Fine-Tuning  
+### 🔹 Variational Autoencoders (VAEs)
 
-Models are trained using examples of how to respond to specific instructions.
+VAEs encode and reconstruct data through a latent space.
 
-- Improves usability  
-- Aligns responses with expected outputs  
+* **Encoder:** Compresses input
+* **Decoder:** Reconstructs output
 
----
+### ⚙️ VAE Flow
 
-### 🔹 Reinforcement Learning from Human Feedback (RLHF)  
-
-A training method that uses human feedback to refine model behavior.
-
-**Process:**
-- Humans evaluate outputs  
-- Feedback is used to improve alignment  
-- Produces more useful and safe responses  
+```
+Input Data → Encoder → Latent Space → Decoder → Reconstructed Output
+```
 
 ---
 
-## 🔍 Retrieval-Augmented Generation (RAG)  
+## ⚙️ Model Training Processes
 
-RAG enhances model responses by incorporating external data.
+### 🔹 Training Pipeline
 
-**Key Idea:**
-- Retrieve relevant information  
-- Use it as context for generation  
+```
+Raw Data → Pre-training → Fine-tuning → Alignment → Deployment
+```
 
-**Benefit:**
-- Improves accuracy  
-- Reduces hallucination  
+### 🔁 Training Lifecycle (Mermaid)
+
+```mermaid
+graph LR
+A[Raw Data] --> B[Pre-training]
+B --> C[Fine-tuning]
+C --> D[RLHF / Alignment]
+D --> E[Deployed Model]
+```
 
 ---
 
-## 📊 Learning Paradigms  
+### 🔹 Pre-training
 
-### 🔹 Supervised Learning  
+Models are trained on large datasets to learn general patterns and representations.
 
-Models are trained on labeled data.
+---
 
-**Goal:**
-Learn a mapping from input → output.
+### 🔹 Instruction Fine-Tuning
+
+* Uses structured examples
+* Aligns model behavior with tasks
+* Improves usability
+
+---
+
+### 🔹 Reinforcement Learning from Human Feedback (RLHF)
+
+Uses human evaluation to refine model outputs.
+
+### ⚙️ RLHF Flow
+
+```
+Model Output → Human Feedback → Reward Signal → Model Adjustment
+```
+
+---
+
+## 🔍 Retrieval-Augmented Generation (RAG)
+
+RAG improves responses by integrating external knowledge.
+
+### ⚙️ RAG Pipeline
+
+```
+Query → Retriever → Documents → Context → Model → Response
+```
+
+### 🔁 RAG Flow (Mermaid)
+
+```mermaid
+graph TD
+Q[User Query] --> R[Retriever]
+R --> D[Relevant Documents]
+D --> C[Context Injection]
+C --> L[LLM]
+L --> O[Response]
+```
+
+---
+
+## 📊 Learning Paradigms
+
+### 🔹 Supervised Learning
+
+Uses labeled data to learn input-output mappings.
 
 #### Types:
-- **Classification:** Assign categories to data  
-- **Regression:** Predict continuous values  
+
+* Classification
+* Regression
 
 ---
 
-### 🔹 Unsupervised Learning  
+### 🔹 Unsupervised Learning
 
-Models learn patterns from unlabeled data.
-
-**Goal:**
-Discover structure, relationships, or patterns.
+Learns patterns from unlabeled data.
 
 #### Techniques:
 
-- **Clustering:**  
-  Groups similar data points into clusters  
+* **Clustering:** Groups similar data
+* **Dimensionality Reduction:** Reduces feature space
 
-- **Dimensionality Reduction:**  
-  Reduces number of features while preserving important information  
+### ⚙️ Learning Comparison
 
----
-
-## 🌍 Real-World Applications  
-
-- Image generation systems  
-- Synthetic data creation  
-- Recommendation systems  
-- Fraud detection  
-- AI-powered assistants  
+```
+Supervised:   Input + Label → Model → Prediction  
+Unsupervised: Input Only → Model → Patterns
+```
 
 ---
 
-## 🔐 Security Perspective  
+## 🌍 Real-World Applications
 
-These systems introduce important risks:
-
-- Synthetic data misuse (deepfakes, manipulation)  
-- Model exploitation via prompt injection  
-- Bias amplification from training data  
-- Over-reliance on generated outputs  
-
-Understanding generative models is critical for identifying **how AI systems can be abused or manipulated**.
+* Image and media generation
+* Synthetic datasets
+* Recommendation systems
+* Fraud detection
+* Conversational AI systems
 
 ---
 
-## 📌 Key Takeaways  
+## 🔐 Security Perspective
 
-- Generative models create new data, not just analyze  
-- GANs, VAEs, and Diffusion models use different generation strategies  
-- Training involves multiple stages beyond pre-training  
-- RAG improves model reliability using external knowledge  
-- Learning types define how models interact with data  
+Generative systems introduce new risks:
 
----
+* Deepfakes and synthetic manipulation
+* Prompt injection attacks
+* Data poisoning
+* Model hallucination and reliability issues
 
-## ✍🏽 Reflection  
-
-This session deepened my understanding of how AI systems actually generate outputs.
-
-The distinction between different generative models and training methods clarified how modern systems like LLMs are built and refined.
-
-The introduction of RAG also highlighted how external knowledge integration improves model performance and reliability.
+AI systems must be treated as **both tools and attack surfaces**.
 
 ---
 
-## 🚀 Next Focus  
+## 📌 Key Takeaways
 
-- Transformer architecture (deep dive)  
-- Tokenization and attention mechanisms  
-- AWS AI services (Bedrock, SageMaker)  
+* Generative models create new data, not just analyze
+* GANs, VAEs, and Diffusion models differ in approach
+* Training involves multiple stages (pre-training → alignment)
+* RAG improves reliability using external knowledge
+* Learning paradigms define how models interpret data
+
+---
+
+## ✍🏽 Reflection
+
+This session clarified how generative systems are structured and trained.
+
+Understanding the differences between architectures and training methods provided a clearer picture of how modern AI systems—especially LLMs—are built and refined.
+
+The introduction of RAG highlighted the importance of grounding models in external knowledge for reliability.
+
+---
+
+## 🚀 Next Focus
+
+* Transformer architecture (attention mechanisms)
+* Tokenization in LLMs
+* AWS AI services (Bedrock, SageMaker)
