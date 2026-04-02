@@ -61,7 +61,7 @@ aws-ai-security-engineering/
 │
 ├── 01_Foundations
 │ ├── AI_Foundamentals.md (Foundations of Artificial Intelligence, Machine Learning, and Generative AI)
-│ ├── (coming soon...)
+│ ├── Generative_Models.md (Generative Models, Training Methods & Learning Paradigms)
 │
 ├── 02_AI_Risks
 │ ├── prompt-injection.md
